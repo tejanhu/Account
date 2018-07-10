@@ -15,11 +15,11 @@ public class Service {
 			account_map.put(a.getID(),a);
 		}	
 		
-		public void read(Account a) {
-			account_map.get(a.getID());
+		public HashMap<Long,Account> readAll() {
+			return this.account_map;
 		}
 				
-		public void update(Long id, String firstName, String lastName, String accountNumber) {
+		public void update(long id, String firstName, String lastName, String accountNumber) {
 			if(account_map.containsKey(id)) {
 				Account newAccount = account_map.get(id);
 				newAccount.setFirstName(firstName);
@@ -31,7 +31,7 @@ public class Service {
 			}
 		}
 		
-		public void delete(Long id) {
+		public void delete(long id) {
 			account_map.remove(id);
 		}
 	
