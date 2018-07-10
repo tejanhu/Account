@@ -36,15 +36,19 @@ public class Service {
 		}
 		
 		public int getNameCount(String firstName) {
-			int counter = 0;
+//			int counter = 0;
+//			
+//			for(Account account:account_map.values()){
+//				if(account.getFirstName().equals(firstName)) {
+//					counter++;
+//				}
+//			}
+//			
+//			return counter;
 			
-			for(Account account:account_map.values()){
-				if(account.getFirstName().equals(firstName)) {
-					counter++;
-				}
-			}
+			return (int) this.account_map.values().stream().filter(s -> s.getFirstName().equals(firstName)).count();
 			
-			return counter;
+			
 		}
 	
 	
