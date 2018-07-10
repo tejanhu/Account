@@ -34,6 +34,18 @@ public class Service {
 		public void delete(long id) {
 			account_map.remove(id);
 		}
+		
+		public int getNameCount(String firstName) {
+			int counter = 0;
+			
+			for(Account account:account_map.values()){
+				if(account.getFirstName().equals(firstName)) {
+					counter++;
+				}
+			}
+			
+			return counter;
+		}
 	
 	
 
