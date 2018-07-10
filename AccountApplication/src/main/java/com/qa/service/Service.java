@@ -1,6 +1,9 @@
-package com.qa.AccountApplication;
+package com.qa.service;
 
 import java.util.HashMap;
+
+import com.qa.accounts.Account;
+import com.qa.constants.Constants;
 
 public class Service {
 	
@@ -24,7 +27,7 @@ public class Service {
 				newAccount.setAccountNumber(accountNumber);
 			}
 			else {
-				System.out.println("Doesn't exist!");
+				System.out.println(Constants.ERROR_MESSAGE);
 			}
 		}
 		
