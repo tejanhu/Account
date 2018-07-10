@@ -1,8 +1,10 @@
 package com.qa.AccountApplication;
 
 /**
- * Hello world!
- *
+ /\_/\
+((@v@))
+():::()
+ VV-VV
  */
 public class App 
 {
